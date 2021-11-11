@@ -2,21 +2,18 @@ import requests
 import random
 import json
 from hashlib import md5
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+
 
 '''
 英译中,返回翻译数组，[{'src':'...','dst':'...'},...]
 可以替换translationAPI中调用的接口来测试其他翻译软件
 '''
-tokenizer = AutoTokenizer.from_pretrained("./opus-mt-en-zh")
-
-model = AutoModelForSeq2SeqLM.from_pretrained("./opus-mt-en-zh")
 
 
 def translationBlackBox(query):
     # 此处替换为自己的百度appid和appkey
-    appid = '20211109000995030'
-    appkey = 'rSOR2RBJ7OfNfPu5vtsR'
+    appid = ''
+    appkey = ''
 
     from_lang = 'en'
     to_lang = 'zh'
