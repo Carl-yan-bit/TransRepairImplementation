@@ -6,7 +6,7 @@ from hashlib import md5
 
 '''
 英译中,返回翻译数组，[{'src':'...','dst':'...'},...]
-可以替换translationAPI中调用的接口来测试其他翻译软件
+可以替换translationAPI中调用的接口来测试其他翻译软件，如google translation
 '''
 
 
