@@ -8,11 +8,11 @@
 
 1. 实现了对于翻译模型的不一致性的自动修复
 2. 输入输出 （例）
-   1. 输入：![](pic\input.png)
+   1. 输入：![](pic/input.png)
    
-   2. 输出：![](pic\output1.png)
+   2. 输出：![](pic/output1.png)
    
-      ![](pic\output2.png)
+      ![](pic/output2.png)
 
 ## 2. 工具使用
 
@@ -34,7 +34,7 @@
 
 ## 3. 基本实现原理
 
-![](pic\自动化测试论文.png)
+![](pic/自动化测试论文.png)
 
 ## 4. 工具功能模块
 
