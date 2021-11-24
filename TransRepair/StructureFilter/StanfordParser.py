@@ -4,11 +4,6 @@ nlp = StanfordCoreNLP(r'E:\NLP\StanfordParser\stanford-corenlp-latest\stanford-c
 
 
 def stanfordParser(s):
-    # print('Tokenize:', nlp.word_tokenize(sentence))
-    # print('Part of Speech:', nlp.pos_tag(s))
-    # print('Named Entities:', nlp.ner(sentence))
-    # print('Constituency Parsing:', nlp.parse(s))  # 语法树
-    # print('Dependency Parsing:', nlp.dependency_parse(s))  # 依存句法
     return nlp.pos_tag(s)
 
 
@@ -16,17 +11,20 @@ def structureFilter(s1, s2):
     """
     判断两个句子结构是否相同
     """
-    p1 = stanfordParser(s1)
-    p2 = stanfordParser(s2)
+    try:
+        p1 = list(stanfordParser(s1))
+        p2 = list(stanfordParser(s2))
+    except:
+        return False
     if len(p1) != len(p2):
         return False
     for i in range(0, len(p1)):
-        if p1[i][1] != p2[i][1]:
+        if p1[i][1][0] != p2[i][1][0]:
             return False
     return True
 
 
-def close():
+def stanford_nlp_close():
     nlp.close()
 
 
@@ -42,4 +40,4 @@ if __name__ == "__main__":
             print("same structure")
         else:
             print("wrong structure")
-    close()
+    stanford_nlp_close()

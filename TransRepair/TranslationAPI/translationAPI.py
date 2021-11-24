@@ -2,6 +2,8 @@ import requests
 import random
 import json
 from hashlib import md5
+import re
+import time
 
 
 '''
@@ -11,9 +13,15 @@ from hashlib import md5
 
 
 def translationBlackBox(query):
+    time.sleep(1)
+    """
+    黑盒翻译模型
+    :param query: 英文
+    :return: 翻译结果
+    """
     # 此处替换为自己的百度appid和appkey
-    appid = ''
-    appkey = ''
+    appid = '你的百度appid'
+    appkey = '你的百度appkey'
 
     from_lang = 'en'
     to_lang = 'zh'
@@ -40,11 +48,8 @@ def translationBlackBox(query):
     return json.loads(json.dumps(result, indent=4, ensure_ascii=False))['trans_result']
 
 
-def translationGreyBox(query):
-    return None
-
-
 if __name__ == "__main__":
-    s = "he likes to eat cake"
+    s = "I'm writing to express sincere gratitude to you all for your devotion and sacrifice in this battle against the Novel Coronavirus"
+    s = re.sub(r"[^A-Za-z\s']", "", s)
     t = translationBlackBox(s)
-    print(t)
+    print(t[0]['dst'])

@@ -1,0 +1,27 @@
+原句：I see he's become a family man.原句翻译：我看到他成了一个有家庭的男人
+修复：我看到他成了一个有家庭的男人
+Label: Unchanged
+原句：You can't take your money with you when you go.原句翻译：你走的时候不能带钱
+修复：你走的时候不能带着钱
+Label: Improved
+原句：Students come here from the four corners of the world.原句翻译：学生们来自世界的四个角落
+修复：学生来自世界的四个角落
+Label: Unchanged
+原句：The algorithm is used to process color image or gray image.原句翻译：该算法用于彩色图像或灰度图像的处理
+修复：该算法用于彩色图像或灰色图像的处理
+Label: Unchanged
+原句：The money is much better in my new job.原句翻译：我的新工作挣钱好多了
+修复：在我的新工作中，钱要好得多
+Label: Improved
+原句：The new store will be open in the spring.原句翻译：新店将在春天开业
+修复：这家新百货商店将在春天开业
+Label: Improved
+原句：It's only human nature to be worried about change.原句翻译：担心变化是人类的天性
+修复：这是人类唯一担心变化的自然界
+Label: Decreased
+原句：This book is divided into two distinct parts.原句翻译：这本书分为两个不同的部分
+修复：这个书分为两个不同的部分
+Label: Unchanged
+原句：The new rules could mean the end of football as we know it.原句翻译：正如我们所知，新规则可能意味着足球的终结
+修复：正如我们所知，新规则可能意味着足球的终结
+Label: Unchanged
