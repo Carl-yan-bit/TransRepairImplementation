@@ -77,9 +77,6 @@
 
       2. 可以替换为自己要测试的翻译模型(注意返回的格式可能与百度翻译不同，需要修改)，本工具使用百度翻译，若要测试百度翻译模型，可以更换自己的appid和appkey
 
-   2. `def translationGreyBox(query):`
-
-      1. 灰盒翻译模型
 
 ### 4.3 SimilarCorpus
 
