@@ -70,10 +70,11 @@ def wdiff_and_cut(sentence1, sentence2):
                     continue
 
             if d[0] != '+':
-                if d[0] == '-':
-                    sub_sentence1 += d[2:].strip()
-                elif d[0] == ' ':
-                    sub_sentence1 += d.strip()
+                if d[0] == '?':
+                    if d[0] == '-':
+                        sub_sentence1 += d[2:].strip()
+                    else:
+                        sub_sentence1 += d.strip()
         sub_sentences1.append(sub_sentence1)
 
     for i in range(1, num_diff2 + 1):
@@ -85,10 +86,11 @@ def wdiff_and_cut(sentence1, sentence2):
                 if count == i:
                     continue
             if d[0] != '-':
-                if d[0] == '+':
-                    sub_sentence2 += d[2:].strip()
-                elif d[0] == ' ':
-                    sub_sentence2 += d.strip()
+                if d[0] == '?':
+                    if d[0] == '+':
+                        sub_sentence2 += d[2:].strip()
+                    else:
+                        sub_sentence2 += d.strip()
         sub_sentences2.append(sub_sentence2)
     return sub_sentences1, sub_sentences2
 
